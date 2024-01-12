@@ -1,3 +1,19 @@
+# CANUSB 
+
+created by kanade @kanade___1214
+
+CAN通信とUSBのブリッジ基板です。  
+高専ロボコン2023用に作成したものを配布用に安価に、誰でも使えるようにしました。  
+作成、使用は自由ですが、kanadeに一声DMしていただけると喜びます。つながりを増やしたいので  
+
+プログラムを書き込む前に”ファイル名”の””行目にてUSBのPIDをご自身のものに書き換えてください。  
+~そのままで動く！わからない人はそのままで！~  
+
+
+ROS2パッケージの説明を下に記述します。
+(ROS2協力：@Pine_Pino_Pine)
+
+
 # ROS2 can_communication
 
 文責：Pine
@@ -41,9 +57,7 @@ subscribeしたCanMsg型topic`/can_tx`をUSB-CAN基板にserialとして流す
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 目的 | メッセージ開始 | チャンネル | フレームタイプ | ID | DLC | データ | メッセージ終了 |
 | 形式 | 0x02 | ASCIIコード | ASCIIコード | ASCIIコード | ASCIIコード |  | 0x03 |
-| 備考 | tx時のみ
-rxでは無し | ‘0’ or ‘1’ | ‘0’ or ‘1’ | 16進数 3桁 | ’1’ ~ ‘8’ | DLCに対応した長さ | tx時のみ
-rxでは無し |
+| 備考 | tx時のみ　rxでは無し | ‘0’ or ‘1’ | ‘0’ or ‘1’ | 16進数 3桁 | ’1’ ~ ‘8’ | DLCに対応した長さ | tx時のみ　rxでは無し |
 
 フレームタイプが1（リモートフレーム）のときはDLCに関わらずdataは無効（rx時は無視され、tx時は空）
 
@@ -51,12 +65,9 @@ rxでは無し |
 
 |  | 目的 | 型 (ROS) | 型 (Python) | 型 (C++) | 形式 |
 | --- | --- | --- | --- | --- | --- |
-| channel | 使用するCAN Busのチャンネル | bool | bool | bool | false: ch0
-true: ch1 |
-| frametype | データフレームとリモートフレームの選択 | bool | bool | bool | false: データフレーム
-true: リモートフレーム |
-| id | CANデバイスのID | uint32 | int | uint32_t | 非負整数
-（例：0x201なら513） |
+| channel | 使用するCAN Busのチャンネル | bool | bool | bool | false: ch0　true: ch1 |
+| frametype | データフレームとリモートフレームの選択 | bool | bool | bool | false: データフレーム　true: リモートフレーム |
+| id | CANデバイスのID | uint32 | int | uint32_t | 非負整数（例：0x201なら513） |
 | dlc | データのbyte長 | byte | bytes | uint8_t | ASCIIコード 1文字 |
 | data | データ | byte配列 | bytesリスト | uint8_t配列 | 各デバイスの仕様による |
 
