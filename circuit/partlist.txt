@@ -1,0 +1,54 @@
+Partlist
+
+Exported from untitled.brd at 2024/01/12 18:44
+
+EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value                Package            Library                    Position (mm)         Orientation
+
+C1       10u                  C1608              Robocon-RLC                (39 27)               MR270
+C2       0.1u                 C1608              Robocon-RLC                (18 27)               MR270
+C3       0.1u                 C1608              Robocon-RLC                (18 19)               MR270
+C4       0.1u                 C1608              Robocon-RLC                (34 13)               MR180
+C5       0.1u                 C1608              Robocon-RLC                (29.35 13)            MR180
+C6       100u                 C3216              Robocon-RLC                (16.15 10.4)          MR270
+C7       100u                 C3216              Robocon-RLC                (26.15 10.4)          MR270
+C8       0.1u                 C:1                Robocon-RLC                (36.5 42)             R0
+C9       0.1u                 C:1                Robocon-RLC                (20.5 42)             R180
+C10      0.1u                 C1608              Robocon-RLC                (39 23)               MR270
+C11      0.1u                 C1608              Robocon-RLC                (18 23)               MR270
+C12      0.1u                 C1608              Robocon-RLC                (26.6 34)             MR0
+C13      0.1u                 C1608              Robocon-RLC                (13.95 10.95)         MR270
+C15      0.1u                 C1608              Robocon-RLC                (69 17.3)             MR90
+C16      0.1u                 C1608              Robocon-RLC                (68.75 37.3)          MR90
+IC1      MCP2562FDT-E_SN      SOIC127P600X175-8N MCP2562FDT-E_SN            (75 17.5)             MR180
+IC2      NJM2845DL1           TO252              Robocon-Regulator          (21 7)                MR180
+IC3      DSPIC33EP512MU810QFP TQFP100_0.5        Robocon-PICMicroController (28.5 23.5)           MR90
+IC4      MCP2562FDT-E_SN      SOIC127P600X175-8N MCP2562FDT-E_SN            (75 37.5)             MR180
+J1       GSB1C41110SSHR       GSB1C41110SSHR     GSB1C41110SSHR             (5 27.5)              R270
+J2       PA4                  PA4                Robocon-Connector          (87 34.5)             R270
+J3       PA4                  PA4                Robocon-Connector          (87 14.5)             R270
+JP3                           1X05/90            Robocon-Pin_Header         (42.52 53.44)         R0
+LED1     OSWT1608             LEDC1608X70N       OSWT1608                   (42 9)                R90
+LED2     OSWT1608             LEDC1608X70N       OSWT1608                   (47 9)                R90
+LED3     OSWT1608             LEDC1608X70N       OSWT1608                   (52 9)                R90
+LED4     OSWT1608             LEDC1608X70N       OSWT1608                   (57 9)                R90
+Q2       12M                  QS                 Robocon-Other              (28.5 42)             R0
+R1       5.1k                 C1608              Robocon-RLC                (13 31)               MR270
+R2       5.1k                 C1608              Robocon-RLC                (13 24)               MR270
+R3       0                    C1608              Robocon-RLC                (77 29)               MR180
+R4       120                  C1608              Robocon-RLC                (73 32)               MR180
+R5       0                    C1608              Robocon-RLC                (77 32)               MR180
+R6       0                    C1608              Robocon-RLC                (77 9)                MR180
+R7       120                  C1608              Robocon-RLC                (73 12)               MR180
+R8       100                  C1608              Robocon-RLC                (28.85 48.8)          MR90
+R9       10k                  C1608              Robocon-RLC                (24.2 48.8)           MR90
+R10      0                    C1608              Robocon-RLC                (77 12)               MR180
+R11      300                  C1608              Robocon-RLC                (42 13)               MR90
+R12      300                  C1608              Robocon-RLC                (47 13)               MR90
+R13      300                  C1608              Robocon-RLC                (52 13)               MR90
+R14      300                  C1608              Robocon-RLC                (57 13)               MR90
+S1                            B3F-10XX           Robocon-Switches           (12 45.4)             R270
+S2       SS-12D003G           SS-12D003G         Robocon-Switches           (7.75 11.8)           R180
